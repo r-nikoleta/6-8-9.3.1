@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Film ktoré mám rada</title>
+
+    <style>
+        html, body {
+        margin: 0;
+        background-color: #c5bfb8;
+        }
+
+        @font-face {
+        font-family: Gilroy Light;
+        src: url(fonts/Gilroy/Gilroy-Light.otf);
+        font-style: normal;
+        font-weight: 300;
+        }
+
+        @font-face {
+        font-family: Gilroy ExtraBold;
+        font-weight: bolder;
+        src: url(fonts/Gilroy/Gilroy-ExtraBold.otf);
+        font-style: normal;
+        font-weight: 800;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: 'Gilroy ExtraBold', serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 10rem; 
+        }
+
+        h2 {
+            font-family: 'Gilroy ExtraBold', serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 5rem; 
+        }         
+
+        nav {
+            margin: 2%;
+        }
+        .review-nav-ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .review-nav-li {
+            padding: 20px;
+            display: inline;
+            font-family: 'Gilroy Light', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+        }
+
+        .nav-a {
+            text-decoration: none;
+            color: #0c0c16;
+        }
+
+        main {
+            margin: 2%;
+            padding: 5%;
+        }
+
+        section {
+            padding: 2%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .rw {
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 314px;
+            min-height: 300px;
+            background-image: url("rw.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+            flex: 1;
+        }   
+
+        .esosm {
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 314px;
+            min-height: 300px;
+            background-image: url("esosm2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+            flex: 2;
+        }       
+
+        .wegg {
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 314px;
+            min-height: 300px;
+            background-image: url("wegg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+            flex: 1;
+        }   
+
+        .material-symbols-outlined {
+            margin-left: auto;
+            color: #d9ff00;
+            font-size: 50px;
+            }
+</style>
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="review-nav-ul">
+            <li class="review-nav-li">
+                <a class="nav-a" href="index.html">Domov</a>
+            </li>
+            <li class="review-nav-li">
+                <a class="nav-a" href="rank.html">Rebríček</a>
+            </li>
+            <li class="review-nav-li">
+                <a class="nav-a" href="reviews.html">Recenzie</a>
+            </li>
+        </ul>
+    </nav>        
+    <main> 
+        
+        <h1>filmy</h1>
+        <section>
+            <article class="rw">
+            <a class="detail" href=" rear-window.html">
+                    <span class="material-symbols-outlined l">
+                    arrow_circle_right
+                    </span>
+                </a>
+            </article>
+            
+            <article class="esosm">   
+                <a class="detail" href=" esosm.html">
+                    <span class="material-symbols-outlined">
+                    arrow_circle_right
+                    </span>
+                </a>
+            </article>
+                
+            <article class="wegg">            
+                <a class="detail" href=" wegg.html">
+                    <span class="material-symbols-outlined">
+                    arrow_circle_right
+                    </span>
+                </a>    
+            </article>
+        </section>
+    </main>
+</body>
+</html>

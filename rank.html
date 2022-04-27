@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebríček</title>
+
+    <style>
+        html, body {
+        margin: 0;
+        background-color: #c5bfb8;
+        }
+
+        @font-face {
+        font-family: Gilroy Light;
+        src: url(fonts/Gilroy/Gilroy-Light.otf);
+        font-style: normal;
+        font-weight: 300;
+        }
+
+        @font-face {
+        font-family: Gilroy ExtraBold;
+        font-weight: bolder;
+        src: url(fonts/Gilroy/Gilroy-ExtraBold.otf);
+        font-style: normal;
+        font-weight: 800;
+        }
+
+        h1 {
+            font-family: 'Gilroy ExtraBold', serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 10rem; 
+        }
+
+        h2 {
+            font-family: 'Gilroy ExtraBold', serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 5rem; 
+        }         
+
+        nav {
+            margin: 2%;
+        }
+        .review-nav-ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .review-nav-li {
+            padding: 20px;
+            display: inline;
+            font-family: 'Gilroy Light', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+        }
+
+        .nav-a {
+            text-decoration: none;
+            color: #0c0c16;
+        }
+
+        main {
+            margin: 2%;
+            padding: 5%;
+            font-family: 'Gilroy Light', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+        }
+
+        li.rebricek     {text-align: left;}
+        li.recenzie    {text-align: left;}
+          
+        
+        a      {text-decoration: none;
+                color: #000000;}   
+
+        li.ikonka       {text-align: right;}        
+     
+
+        table   {
+                margin-left: auto;
+                margin-right: auto;
+                padding: 5%;
+                background-color: #9b918467;
+                border-radius: 40px ;
+            }
+        
+        th,td   {
+                
+                margin: 20px;
+                padding: 5px;
+                height: 30px;
+                } 
+
+        th      {background-color: #0c0c16;
+                color: #cac2b7;}
+        
+        tr.kontrast     {background-color: #9b9184d2;
+        }
+
+        td.umiestnenie   {
+                        text-align: right}
+
+
+        td.rok  {
+                text-align: center;
+                width: 60px;
+        }
+
+        
+        td.hodnotenie   {
+                        text-align: center;
+                        width: 100px;}
+        td.nad          {color: #565f00;}                
+
+        .tooltip {
+        position: relative;
+        display: inline-block;
+}
+
+        .tooltip .tooltip-text {
+        padding: 10px;
+        visibility: hidden;
+        width: 200px;
+        top: 100%;
+        left: 10%;
+        background-color: #565f0077;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        }
+
+        .tooltip:hover .tooltip-text {
+        visibility: visible;
+        }
+
+        .tooltip-img {
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="review-nav-ul">
+            <li class="review-nav-li">
+                <a class="nav-a" href="index.html">Domov</a>
+            </li>
+            <li class="review-nav-li">
+                <a class="nav-a" href="rank.html">Rebríček</a>
+            </li>
+            <li class="review-nav-li">
+                <a class="nav-a" href="reviews.html">Recenzie</a>
+            </li>
+        </ul>
+    </nav>        
+
+   
+    
+    <main> 
+        
+        <h1>filmy</h1>
+        <h2>TOP 20</h2>
+
+        <table>
+            <tr>
+                <th class="umiestnenie">Umiestnenie</th>
+                <th class="nazov">Názov</th>
+                <th class="rok">Rok</th>
+                <th class="hodnotenie nad">Hodnotenie</th>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">1</td>
+                <td>
+                    <a href="shawshank.html">
+                        <div class="tooltip">Vykúpenie z väznice Shawshank
+                            <span class="tooltip-text"><img class="tooltip-img" src="tr.png" width="30">Tim Robbins</span>
+                        </div>
+                    </a>
+                </td>
+                <td class="rok">1994</td>
+                <td class="hodnotenie nad">95,3&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">2</td>
+                <td>
+                    <a href="forest-gump.html">
+                        <div class="tooltip">Forest Gump
+                            <span class="tooltip-text"><img class="tooltip-img" src="thg.png" width="30">Tom Hanks</span>
+                        </div>
+                    </a>
+                </td>
+                <td class="rok">1994</td>
+                <td class="hodnotenie nad">94,5&#37</td>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">3</td>
+                <td>
+                    <a href="green-mile.html">
+                        <div class="tooltip">Zelená míľa
+                            <span class="tooltip-text"><img class="tooltip-img" src="thm.png" width="30">Tom Hanks</span>
+                        </div>
+                    </a>
+                </td>
+                <td class="rok">1999</td>
+                <td class="hodnotenie nad">92,9&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">4</td>
+                <td>
+                    <div class="tooltip">Prelet nad kukaččím hniezdom
+                        <span class="tooltip-text"><img class="tooltip-img" src="jn.png" width="30">Jack Nicholson</span>
+                    </div>
+               </td>
+                <td class="rok">1975</td>
+                <td class="hodnotenie nad">92,5&#37</td>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">5</td>
+                <td>
+                    <div class="tooltip">Sedem
+                        <span class="tooltip-text"><img class="tooltip-img" src="bp.png" width="30">Brad Pitt</span>
+                    </div>
+                </td>
+                <td class="rok">1995</td>
+                <td class="hodnotenie nad">92,4&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">6</td>
+                <td>Schindlerov zoznam</td>
+                <td class="rok">1993</td>
+                <td class="hodnotenie nad">92,3&#37</td>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">7</td>
+                <td>Krstný otec</td>
+                <td class="rok">1972</td>
+                <td class="hodnotenie">91,8&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">8</td>
+                <td>Dvanásť rozhnevaných mužov</td>
+                <td class="rok">1957</td>
+                <td class="hodnotenie">91,4&#37</td>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">9</td>
+                <td>Nedotknuteľní</td>
+                <td class="rok">2011</td>
+                <td class="hodnotenie">91,3&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">10</td>
+                <td>Pelíšky</td>
+                <td class="rok">1999</td>
+                <td class="hodnotenie">91,2&#37</td>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">11</td>
+                <td>Terminátor: Deň zúčtovania</td>
+                <td class="rok">1991</td>
+                <td class="hodnotenie">90,9&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">12</td>
+                <td>Pulp Fictio</td>
+                <td class="rok">1994</td>
+                <td class="hodnotenie">90,7&#37</td>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">13</td>
+                <td>Krstný otec II</td>
+                <td class="rok">1974</td>
+                <td class="hodnotenie">90,8&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">14</td>
+                <td>Pán prsteňov: Spoločenstvo Prsteňa</td>
+                <td class="rok">2001</td>
+                <td class="hodnotenie"> 90,5&#37</td>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">15</td>
+                <td>Pán prsteňov: Návrat kráľa</td>
+                <td class="rok">2003</td>
+                <td class="hodnotenie">90,5&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">16</td>
+                <td>Mlčanie jahniat
+                </td>
+                <td class="rok">1991</td>
+                <td class="hodnotenie">90,5&#37</td>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">17</td>
+                <td>Vtedy na Západe</td>
+                <td class="rok">1968</td>
+                <td class="hodnotenie">90,5&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">18</td>
+                <td>Temný rytier</td>
+                <td class="rok">2008</td>
+                <td class="hodnotenie">90,3&#37</td>
+            </tr>
+            <tr class="kontrast">
+                <td class="umiestnenie">19</td>
+                <td>Gran Torino</td>
+                <td class="rok">2008</td>
+                <td class="hodnotenie">90,3&#37</td>
+            </tr>
+            <tr>
+                <td class="umiestnenie">20</td>
+                <td>The Matrix</td>
+                <td class="rok">1999</td>
+                <td class="hodnotenie">90,2&#37</td>
+            </tr>
+        </table>
+        <br>
+        <audio controls autoplay>
+            <source src="Overthinking.mp3">
+        </audio>
+    </main>
+</body>
+</html>

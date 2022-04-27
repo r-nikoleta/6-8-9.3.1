@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Recenzie</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            background-color: #c5bfb8;
+        }
+
+        @font-face {
+        font-family: Gilroy Light;
+        src: url(fonts/Gilroy/Gilroy-Light.otf);
+        font-style: normal;
+        font-weight: 300;
+        }
+
+        @font-face {
+        font-family: Gilroy ExtraBold;
+        font-weight: bolder;
+        src: url(fonts/Gilroy/Gilroy-ExtraBold.otf);
+        font-style: normal;
+        font-weight: 800;
+        }
+    
+
+        .logo { 
+            width: 40px;
+            height: 40px; 
+            padding: 10px;
+            position: relative;
+            float: left;
+        }
+
+        .w {
+            width: 20px;
+            height: 20px;
+            border: solid #9b9184 5px;
+            position: absolute;
+            z-index: 1;
+            left: 20px;
+        }
+
+        .x {
+            width: 20px;
+            height: 20px;
+            border: solid #b1b1b1 5px;
+            position: absolute;
+            top: 20px;
+            z-index: 2;
+        }
+
+        .y {
+            width: 20px;
+            height: 20px;
+            border: solid #0c0c16 5px;
+            position: absolute;
+            z-index: 3;
+            left: 20px;
+            top: 20px;
+            box-shadow: 4px 4px 10px #3535355b;
+        }        
+        
+        .z {
+            width: 20px;
+            height: 20px;
+            border: solid #d3d3d3 5px;
+            position: absolute;
+            z-index: 4;
+            box-shadow: -4px -4px 10px #3535355b;
+        }
+
+        nav {
+            margin: 2%;
+        }
+        .review-nav-ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .review-nav-li, a {
+            padding: 20px;
+            display: inline;
+            font-family: 'Gilroy Light', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            
+        }
+        .nav-a {
+            text-decoration: none;
+            color: #0c0c16;
+        }
+
+        main {
+            margin: 2%;
+            padding: 5%;
+            font-family: 'Gilroy Light', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-family: 'Gilroy ExtraBold', serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 10rem; 
+        }
+
+        h2 {
+            font-family: 'Gilroy ExtraBold', serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 5rem; 
+        }         
+
+        form { background-color: sienna;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5%;
+            background-color: #9b918467;
+            border-radius: 40px ;
+        }
+        
+        input {
+            margin: 0.5rem;
+            width: 200px;
+            height: 1.5rem;
+            border: none;
+            border-radius: 40px;
+            text-align: center;
+            background-color: #ffffff5b;
+        }
+        
+        textarea {
+            margin: 0.5rem;
+            width: 60%;
+            border: none;
+            border-radius: 10px;
+            background-color: #ffffff5b;
+
+        }
+
+        .submit {
+            padding: 0.5rem;
+            width: 200px;
+            height: 2rem;
+            border: none;
+            background-color: #0c0c16;
+            color: #cac2b7;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="w"></div>
+            <div class="x"></div>
+            <div class="y"></div>
+            <div class="z"></div>
+        </div>
+
+        <ul class="review-nav-ul">
+            <li class="review-nav-li">
+                <a class="nav-a" href="index.html">Domov</a>
+            </li>
+            <li class="review-nav-li">
+                <a class="nav-a" href="rank.html">Rebríček</a>
+             </li>
+            <li class="review-nav-li">
+                <a class="nav-a" href="reviews.html">Recenzie</a>
+            </li>
+
+        </ul>
+    </nav>        
+    <main> 
+        
+        <h1>filmy</h1>
+        <h2>TOP 20</h2>
+        
+        <form>
+        <label for="film">Názov filmu: </label><br>
+            <input id="film" type="text" name="film" required><br>
+
+        <label for="meno">Meno: </label><br>
+            <input id="meno" type="text"><br>
+
+        <label for="email">Email: </label><br>        
+            <input id="email" type="email" name="email" required><br>
+
+        <label for="recenzia">Recenzia: </label><br>
+            <textarea name="recenzia" id="recenzia" cols="50" rows="10"></textarea><br>
+
+        <label for="film">Názov filmu: </label><br>    
+            <input type="date"><br>
+
+        <label for="hodnotenie">Vaše hodnotenie:</label><br>
+            <input type="range" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0" label="0%"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100" label="100%"></option>
+                </datalist><br>
+
+        <label for="zaner">Vyberte žáner filmu: </label><br>
+            <input id="zaner" type="checkbox" >
+                <label for="zaner">Dráma</label><br>
+            <input id="zaner" type="checkbox">
+                <label for="zaner">Komedia</label><br>
+            <input id="zaner" type="checkbox">
+                <label for="akcny">Akčný</label><br>
+            <input id="zaner" type="checkbox">
+                <label for="zaner">Horor</label><br>
+            <input class="submit" type="submit">
+        </form>
+    </main>           
+</body>
+</html>

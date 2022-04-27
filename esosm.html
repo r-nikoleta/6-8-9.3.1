@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Rebríček</title>
+
+    <style>
+        html, body {
+        margin: 0;
+        background-color: #c5bfb8;
+        }
+
+        @font-face {
+        font-family: Gilroy Light;
+        src: url(fonts/Gilroy/Gilroy-Light.otf);
+        font-style: normal;
+        font-weight: 300;
+        }
+
+        @font-face {
+        font-family: Gilroy ExtraBold;
+        font-weight: bolder;
+        src: url(fonts/Gilroy/Gilroy-ExtraBold.otf);
+        font-style: normal;
+        font-weight: 800;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: 'Gilroy ExtraBold', serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 10rem; 
+        }
+
+        h2 {
+            font-family: 'Gilroy ExtraBold', serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 4rem; 
+        }         
+
+        nav {
+            margin: 2%;
+        }
+        .review-nav-ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .review-nav-li {
+            padding: 20px;
+            display: inline;
+            font-family: 'Gilroy Light', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+        }
+
+        .nav-a {
+            text-decoration: none;
+            color: #0c0c16;
+        }
+
+        main {
+            margin: 2%;
+            padding: 5%;
+            font-family: 'Gilroy Light', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 2rem;
+        }
+
+        article {
+            text-align: justify;
+        }
+  
+        article:first-letter{
+            font-family: 'Gilroy ExtraBold', serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 4rem; 
+            color: #d9ff00;
+        }
+
+        video {
+            display: block;
+            margin: auto;
+            padding: 5%;
+        }
+        
+        .director-li, .music-li, .cast-li {
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="review-nav-ul">
+            <li class="review-nav-li">
+                <a class="nav-a" href="index.html">Domov</a>
+            </li>
+            <li class="review-nav-li">
+                <a class="nav-a" href="rank.html">Rebríček</a>
+            </li>
+            <li class="review-nav-li">
+                <a class="nav-a" href="reviews.html">Recenzie</a>
+            </li>
+        </ul>
+    </nav>        
+
+   
+    
+    <main> 
+        <h1>filmy</h1>
+        <h2>Večný svit nepoškvrenej mysle</h2>
+
+        <section class="article-section">
+            <article>
+                Kultová snímka Michela Gondryho vypráva príbeh lásky Joela a Clementie, tak osudovej, že ju nedokáže prekonať ani najmodernejšia veda. – Keď Joel zistí že si Clementine nechala vymazať z pamäti ich búrlivý vzťah, rozhodne sa podstúpiť zákrok tiež. Avšak akonáhle sa spomienky začnú vytrácať, Joel začne hľadať spôsoby ako to zvrátiť.
+            </article>
+        </section>
+       
+        <section class="media-section">
+            <video width="560" height="315" controls>
+                <source src="esosm-video.mp4" type="video/mp4">
+            </video>
+            <br>
+            <svg width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 34" id="Layer_34"><path d="M32,2.5A29,29,0,0,0,17.5,56.6c.65.39,1.32.74,2,1.07a29,29,0,0,0,4.95,1.83c.67.19,1.36.34,2.05.47a28.8,28.8,0,0,0,11,0c.69-.13,1.38-.28,2-.47a29,29,0,0,0,5-1.83c.68-.33,1.35-.68,2-1.07A29,29,0,0,0,32,2.5ZM19.5,55.42V22.57l.43-.17a5.56,5.56,0,0,1,4.11,0l.09,0,.37.14V57.43A25.62,25.62,0,0,1,19.5,55.42ZM37.5,44A32.08,32.08,0,0,0,32,43.5a32.08,32.08,0,0,0-5.5.53v-7.7A9.89,9.89,0,0,1,32,34.5a9.89,9.89,0,0,1,5.5,1.83ZM32,58.5a26.25,26.25,0,0,1-5.5-.57V46.06A30.1,30.1,0,0,1,32,45.5a30.1,30.1,0,0,1,5.5.56V57.93A26.25,26.25,0,0,1,32,58.5Zm7.5-1.07V22.58l.44-.18a5.54,5.54,0,0,1,4.12,0l.44.18V55.42A25.62,25.62,0,0,1,39.5,57.43Zm7-3.17V23.38l.13.05a1,1,0,0,0,.37.07,1,1,0,0,0,.37-1.93l-2.56-1a7.48,7.48,0,0,0-5.62,0l-2.56,1a1,1,0,0,0,.74,1.86l.13-.05V34A11.45,11.45,0,0,0,32,32.5,11.45,11.45,0,0,0,26.5,34V23.38l.13.05a1,1,0,0,0,.37.07,1,1,0,0,0,.37-1.93l-2.46-1-.1,0a7.67,7.67,0,0,0-5.69,0l-2.49,1a1,1,0,0,0,.74,1.86l.13-.05V54.26a27,27,0,1,1,29,0Z"/></g></svg>
+        </section>
+
+        <section class="cast">
+            <ul><span class="material-symbols-rounded">
+                videocam
+                </span> Réžia:
+                <li class="director-li">Michel Gondry</li>
+            </ul>
+
+            <ul><span class="material-symbols-rounded">
+                music_note
+                </span> Hudba:
+                <li class="music-li">Jon Brion</li>
+            </ul>
+
+            <ul><span class="material-symbols-rounded">
+                    star
+                    </span> Hrali:
+                <li class="cast-li">Jim Carrey</li>
+                <li class="cast-li">Kate Winslet</li>
+                <li class="cast-li">Elijah Wood</li>
+                <li class="cast-li">Mark Ruffalo</li>      
+            </ul>
+
+        </section>
+        
+    </main>
+</body>
+</html>
